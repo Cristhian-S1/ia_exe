@@ -32,14 +32,13 @@ def restrictions(expeditions):
         #5. El equipo de Darrell incluirá a Yolanda.
         membero( (var(), "darrell", "yolanda"), expeditions ),
 
-        #Dominios
+        #Dominios (los memberos sin lany *bifurcacion de ramas* y los left_of,right_of y somewhat ya agregan al dominio )
         membero( (var(),var(),'kay'), expeditions ),
         membero( (var(),var(),'amelia'), expeditions ),
 
         membero( (var(),"horace",var()), expeditions ),
         membero( (var(),"zachary",var()), expeditions )
     )
-
 
 #1. The four teams will be Zachary's expedition, Amelia's expedition, the expedition leaving in March and the expedition leaving in February.
 #1. Los cuatro equipos serán: la expedición de Zachary, la expedición de Amelia, la expedición que sale en marzo y la expedición que sale en febrero.
