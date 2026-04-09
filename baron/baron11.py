@@ -33,12 +33,13 @@ def restricciones(pronosticos):
 
         membero( (var(),"foggy",var()), pronosticos ),
         membero( (var(),"drizzly",var()), pronosticos ),
-        membero( (var(),"heavy_rain",var()), pronosticos )
+        membero( (var(),"heavy_rain",var()), pronosticos ),
+        membero( (var(),"thunderstorm",var()), pronosticos )
     )
 
-resultados = run(0, pronosticos, restricciones(pronosticos),
-differents(pronosticos, (("foggy","thunderstorm",), (20,), ("heavy_rain",)))
-)
+resultados = run(0, pronosticos, restricciones(pronosticos), 
+                 differents(pronosticos, [[20], ["heavy_rain"], ["thunderstorm","foggy"]])
+                 )
 
 for resultado in resultados:
     print(resultado)
