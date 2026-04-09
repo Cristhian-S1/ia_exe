@@ -9,9 +9,6 @@ piece3 = (250, var(), var())
 piece4 = (300, var(), var())
 pieces = (piece1,piece2,piece3,piece4)
 
-floral, 
-grabado, plomo
-
 def restriction1(list_p):
     # 1. La obra floral utiliza la técnica del grabado.
     return membero((var(),"floral","grabado"), list_p)
