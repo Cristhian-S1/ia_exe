@@ -4,7 +4,6 @@ Comencemos con un problema de ejemplo sencillo en el que hay lo siguiente:
 
     - Tres variables, x, y, y z, cada una de las cuales puede asumir los valores: 0, 1 o 2.
     - Una restricción: x != y
-
 """
 
 from ortools.sat.python import cp_model
@@ -24,7 +23,7 @@ z = model.new_int_var(0, 2, "z")
 #y permitir multiples restricciones independientes 
 model.add(x != y)
 
-#Usamos la clase de CpSolver() que viene con el modulo de co_model
+#Usamos la clase de CpSolver() que viene con el modulo de cp_model
 #para crear una instancia
 solver = cp_model.CpSolver()
 solution_printer = VarArraySolutionPrinter([x, y ,z])

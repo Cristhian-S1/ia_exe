@@ -1,7 +1,6 @@
 # https://logic.puzzlebaron.com
 # origen: curso IA 2022
 
-
 from logicpuzzles import *
 from time import perf_counter
 
